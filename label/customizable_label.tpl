@@ -4,12 +4,12 @@ Set any of the options in this section from 'false' to 'true' in order to enable
 #}
 
 {% set vendor_number = false %}                     {# Display Vendor ID (if available) above Description #}
-{% set show_custom_sku = false %}                   {# Display Custom SKU (if available) above Description #}
+{% set show_custom_sku = true %}                   {# Display Custom SKU (if available) above Description #}
 {% set show_manufacturer_sku = false %}             {# Display Manufacturer SKU (if available) above Description #}
 {% set show_upc_code = false %}                     {# Display the UPC code at the top of the receipt (using UPC codes in barcode does not work) #}
-{% set show_date = false %}                         {# Display today's date above description (ddmmyy formatting) #}
+{% set show_date = true %}                         {# Display today's date above description (ddmmyy formatting) #}
 {% set price_with_no_cents = false %}               {# Remove cents from being displayed in price #}
-{% set date_format = 'mdy' %}                       {# Format the date is shown in if show_date is enabled.
+{% set date_format = 'my' %}                       {# Format the date is shown in if show_date is enabled.
                                                         m = 2 digit month, d = 2 digit day, y = 2 digit year, Y = 4 digit year #}
 {% set hide_price = false %}                        {# Remove the price from displaying on label #}
 {% set hide_description = false %}                  {# Remove the description from displaying on label #}
